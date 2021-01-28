@@ -1,8 +1,6 @@
 baseURL: "https://csvass.github.io"
 title: CsendesBlog
 languageCode: hu
-paginate: 5
-theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -35,6 +33,9 @@ languages:
                 - name: Keresés
                   url: archive/
                   weight: 20
+                - name: Blog
+                  url: https://csvass.netlify.app/hu
+                  weight: 20
       en: 
         languageName: ":en:"
         weight: 2   
@@ -52,6 +53,9 @@ languages:
                 - name: Search
                   url: archive/
                   weight: 20
+                - name: Blog
+                  url: https://csvass.netlify.app
+                  weight: 20
                 
                 
  
@@ -66,9 +70,7 @@ params:
     tagline: "GitHub oldalam PaperMod témával"
     description: "Önkifejezési gyakorlatok és informatikai eszközök."
     author: Csaba Vass
-    GitHubUser: "csendesbob"
-    LinkedInUser: "vass-csaba"
-    TwitterUser: "csendesbob"
+    
     
     
     # author: ["Me", "You"] # multiple authors
@@ -112,13 +114,7 @@ params:
         Title: "Hi There \U0001F44B"
         Content: This is my Github page/blog abut useful web tools. I started it for learning purposes. I would like to improve my programming knowledge.
 
-    socialIcons:
-        - name: github
-          url: "https://github.com/csvass/csvass.github.io"
-        - name: linkedin
-          url: "https://linkedin.com/vass-csaba"  
-        - name: twitter
-          url: "https://twitter.com/csendesbob"
+    
      
     
 
@@ -135,3 +131,6 @@ menu:
         - identifier: about
           url: /about/
           weight: 30
+        - name: Blog
+          url: https://csvass.netlify.app
+          weight: 20
