@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"><title>zero</title>
+<style>.parallax { 
+    /* The image used */
+    background-image: url("images/simpleminmap.png");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+<!-- CSS -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+</head>
+
+<body>
+<!-- nav -->
+<nav class="light-blue lighten-1" role="navigation">
+<div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="material-icons">home</i></a>
+<ul class="right hide-on-med-and-down">
+<li><a href="note.html"><i class="material-icons">note</i>Notes</a></li>
+<li><a href="cal.html"><i class="material-icons">today</i>Events</a></li>
+<li><a href="#"><i class="material-icons">done</i>tasks</a></li>
+<li><a href="#"><i class="material-icons">email</i>mail</a></li>
+<li><a href="storage.html"><i class="material-icons">storage</i>Data storage</a></li>
+</ul>
+<ul id="nav-mobile" class="side-nav">
+<li><a href="index.html">Home</a><a href="#">Event</a>
+<a href="#">task</a></li>
+<li><a href="#">mail</a></li>
+<li><a href="storage.html">Data storage</a></li>
+</ul>
+<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+</div>
+</nav>
+<!-- Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+<h1>my start page</h1>
+<!-- Container element -->
+<div class="parallax"></div>
+<p>start here</p>
+</body>
+</html>

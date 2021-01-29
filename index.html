@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+< <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+ <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+
+<!-- nav -->
+<nav class="light-blue lighten-1" role="navigation">
+<div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="material-icons">home</i></a>
+<ul class="right hide-on-med-and-down">
+<li><a href="note.html"><i class="material-icons">note</i>Notes</a></li>
+<li><a href="cal.html"><i class="material-icons">today</i>Events</a></li>
+<li><a href="#"><i class="material-icons">done</i>tasks</a></li>
+<li><a href="#"><i class="material-icons">email</i>mail</a></li>
+<li><a href="storage.html"><i class="material-icons">storage</i>Data storage</a></li>
+</ul>
+<ul id="nav-mobile" class="side-nav">
+<li><a href="index.html">Home</a><a href="#">Event</a>
+<a href="#">task</a></li>
+<li><a href="#">mail</a></li>
+<li><a href="storage.html">Data storage</a></li>
+</ul>
+<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+</div>
+</nav>
+
+<div class="section no-pad-bot" id="index-banner">
+<div class="container"> <br>
+<h1 class="header center orange-text">gIdea</h1>
+<div class="row center">
+<h5 class="header col s12 light">From an idea to a data store with Google apps</h5>
+
+</div>
+<div class="row center"> <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+</div>
+<br>
+<br>
+</div>
+</div>
+<div class="container">
+
+
+<div class="section"><!-- Icon Section -->
+
+<div class="icon-block">
+<h2 class="center light-blue-text"><i class="material-icons">addnoteadd</i></h2>
+<h5 class="center">Start here</h5>
+<p class="light center">The first thing if you want to save something to later is give it a short title (required) and description here</p>
+
+<form class="col s12" action="" method="GET" id="new-task-form">
+  	 <div class="row">    
+		 <div class="input-field col s4" >
+		  <input type="text" id="new-task-name" class="task-name"
+                 required="required" placeholder="Title" />
+			</div>
+		<div class="input-field col s6" >
+		<textarea id="description" class="materialize-textarea" ></textarea>
+		<label for="textarea1">description</label>
+		</div>
+          <a class="waves-effect waves-light btn inline"><i class="material-icons left">addnote</i></a>
+		  </div>
+        </form>
+</div>
+<div class="icon-block">
+<h2 class="center light-blue-text"><i class="material-icons">addeventadd</i></h2>
+<h5 class="center">Events</h5>
+<p class="light center">If your idea connected to a date, is a calendar event</p>
+
+<form class="col s12" action="" method="GET" id="new-date-form">
+  	 <div class="row">    
+		 <div class="input-field col s7" >
+		  <input type="date" class="datepicker" id="StartDate" placeholder="Start date"/>
+		
+		</div>
+		<div class="input-field col s3" >
+		
+		<input type="time" class="timepicker" id="StartTime" placeholder="Start time"/>	
+		<label for="StartTime">Set Start time</label>		
+		</div>
+		<div class="row">    
+		 <div class="input-field col s7" >
+		  <input type="date" class="datepicker" id="EndDate" placeholder="End date"/>
+		
+		</div>
+		<div class="input-field col s3" >
+			
+		<input type="time" class="timepicker" id="EndTime" placeholder="End time"/>
+	<label for="EndTime">Set End time</label>	
+		</div>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">addevent</i></a>
+		  </div>
+        </form>
+
+
+
+
+
+<div class="icon-block">
+<h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+<h5 class="center">Easy to work with</h5>
+<p class="light">We have provided detailed documentation
+as well as specific code examples to help new users get started. We are
+also always open to feedback and can answer any questions a user may
+have about Materialize.</p>
+</div>
+
+</div>
+</div>
+<br>
+<br>
+<div class="section"> </div>
+</div>
+<footer class="page-footer orange"> </footer>
+<div class="container">
+<div class="row">
+<div class="col l6 s12">
+<h5 class="white-text">Company Bio</h5>
+<p class="grey-text text-lighten-4">We are a team of
+college students working on this project like it's our full time job.
+Any amount would help support and continue development on this project
+and is greatly appreciated.</p>
+</div>
+<div class="col l3 s12">
+<h5 class="white-text">Settings</h5>
+<ul>
+<li><a class="white-text" href="#%21">Link 1</a></li>
+<li><a class="white-text" href="#%21">Link 2</a></li>
+<li><a class="white-text" href="#%21">Link 3</a></li>
+<li><a class="white-text" href="#%21">Link 4</a></li>
+</ul>
+</div>
+<div class="col l3 s12">
+<h5 class="white-text">Connect</h5>
+<ul>
+<li><a class="white-text" href="#%21">Link 1</a></li>
+<li><a class="white-text" href="#%21">Link 2</a></li>
+<li><a class="white-text" href="#%21">Link 3</a></li>
+<li><a class="white-text" href="#%21">Link 4</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="container"> Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a> </div>
+</div>
+<!-- Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+</body></html>
