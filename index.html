@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-< <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-      <!--Let browser know website is optimized for mobile-->
+<meta charset="UTF-8">
+<title>My materialize site</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<base target="_blank" />
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<< <!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
@@ -13,9 +21,9 @@
  <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
-
+	  <script src="js/init.js"></script>
 <!-- nav -->
-<nav class="light-blue lighten-1" role="navigation">
+<nav class="grey darken-3" role="navigation">
 <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="material-icons">home</i></a>
 <ul class="right hide-on-med-and-down">
 <li><a href="note.html"><i class="material-icons">note</i>Notes</a></li>
@@ -23,9 +31,10 @@
 <li><a href="#"><i class="material-icons">done</i>tasks</a></li>
 <li><a href="#"><i class="material-icons">email</i>mail</a></li>
 <li><a href="storage.html"><i class="material-icons">storage</i>Data storage</a></li>
+<li><a href="sample_index.html"><i class="material-icons">build</i>Sample</a></li>
 </ul>
 <ul id="nav-mobile" class="side-nav">
-<li><a href="index.html">Home</a><a href="#">Event</a>
+<li><a href="index.html">Home</a><a href="cal.html">Event</a>
 <a href="#">task</a></li>
 <li><a href="#">mail</a></li>
 <li><a href="storage.html">Data storage</a></li>
@@ -36,17 +45,38 @@
 
 <div class="section no-pad-bot" id="index-banner">
 <div class="container"> <br>
-<h1 class="header center orange-text">gIdea</h1>
+<h1 class="header center orange-text">Idea</h1>
 <div class="row center">
-<h5 class="header col s12 light">From an idea to a data store with Google apps</h5>
-
+<h5 class="header col s12 light">From an idea to a data store</h5>
+<table>
+<tr>
+<th>Have an Idea?</th><th>Van egy ötleted?</th>
+</tr>
+<tr>
+<td>Write a title and Description -> is a <b>Note</b><br>
+Want to send it or post it/ Share it?<br>
+It's an <b>event</b>? Add a date (and time), and location<br>
+want to just remind or need some action ? It's a <b>task</b>.<br>
+Want to categorize and/or Tag it?<br>
+Want to give some additional information ?<br>
+Want to Save all data ? It's a spreadsheet<br>
+Want to connect data by time/person/place/category/tag? It's a database<br>
+Want to sync between devices?<br>
+Want to do all even offline to?<br></td>
+<td>Adj neki címet és írj róla pár sort. Ez egy <b>jegyzet</b><br>
+Szeretnéd közzétenni vagy megosztani? Adj hozzá egy dátumot ez egy <b>esemény</b>.<br>
+Valami teendő is kapcsolódik hozzá? Ez egy <b>feladat</b>.
+További információkat adnál hozzá? <br>Az egészet egyben szeretnéd elmenteni? Ez egy <b>táblázat</b>.<br>
+Az adatokat szeretnéd összefűzni idő, személy, hely, vagy téma szerint? Ez egy<b>adatbázis</b>.<br>
+Szeretnéd egyszerre több eszközön használni? Jó lenne offline is elérni és szerkeszteni? </td>
+</tr>
+</table>
 </div>
 <div class="row center"> <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
 </div>
-<br>
-<br>
 </div>
 </div>
+
 <div class="container">
 
 
@@ -153,8 +183,4 @@ and is greatly appreciated.</p>
 <div class="footer-copyright">
 <div class="container"> Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a> </div>
 </div>
-<!-- Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
 </body></html>
